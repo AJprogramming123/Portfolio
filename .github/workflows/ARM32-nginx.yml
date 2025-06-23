@@ -25,7 +25,7 @@ jobs:
         run: docker compose build backend-arm32 reverse-proxy-arm32
 
       - name: Tag reverse proxy image for GHCR
-        run: docker tag reverseproxy-arm32 ghcr.io/ajprogramming123/portfolio-reverseproxy-arm32:latest
+        run: docker tag reverse-proxy-arm32 ghcr.io/ajprogramming123/portfolio-reverseproxy-arm32:latest
 
       - name: Push tagged reverse proxy image to GHCR
         run: docker push ghcr.io/ajprogramming123/portfolio-reverseproxy-arm32:latest
