@@ -1,0 +1,8 @@
+I want to do this step by step:
+- Considering I dont want to rely on live server I want to start by setting up the nginx config file with Docker
+    - The goal is to have (2 images) (backend + flask) + (frontend static stuff + nignx config)
+        - Step 1: find nginx image in dockerhub: 'docker search nginx'
+            - nginx:alphine is the lightest that's why we picked it, fast and no bloating whatsoever
+
+        - Step 2: config the config file
+            - 

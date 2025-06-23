@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-black text-white font-mono min-h-screen">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>About Me - Andres Jaimes</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+
+<body class="flex flex-col items-center justify-start min-h-screen p-8 space-y-12">
+
+  <!-- Back button -->
+  <a href="/home" class="self-start flex items-center space-x-2 text-green-400 hover:text-green-300 transition-colors">  
+    <span>Back to Home</span>
+  </a>
+
+  <main class="max-w-4xl">
+
+    <h1 class="text-4xl font-bold mb-6 text-center">About Me</h1>
+
+    <section class="mb-12 text-lg leading-relaxed">
+      <p>
+        Hello! I’m Andres Jaimes, an IT major at FIU with a passion for system administration and DevOps.  
+        I love working behind the scenes to configure infrastructure, automate workflows, and build robust backend solutions.
+      </p>
+
+      <p class="mt-4">
+      Although I've been studying technology for just over a year and a few months, I’ve quickly developed a strong foundation in Linux server management, 
+      containerization with Docker, and cloud service integration. I’m passionate about solving complex challenges that combine coding, networking, and security. Each day, I strive to deepen my knowledge and expand my skillset to become a well-rounded IT professional and DevOps engineer.
+      </p>
+      
+      <p class="mt-4">
+        This entire website is hosted on a Raspberry Pi that I personally configured — proof of my hands-on experience managing real-world systems.  
+        I'm always eager to learn new technologies and improve my craft, especially when it comes to scalable, secure backend systems.
+      </p>
+    </section>
+
+    <section class="text-center">
+      <h2 class="text-2xl font-semibold mb-4">My Resume</h2>
+
+      <img src="{{ url_for('static', filename='img/resume.png') }}" alt="Resume - Andres Jaimes" class="mx-auto max-w-full border border-white rounded-lg shadow-lg" />
+    </section>
+
+  </main>
+
+</body>
+
+</html>

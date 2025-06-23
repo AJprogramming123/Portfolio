@@ -1,0 +1,38 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: emailbreach
+    environment:
+      - RAPIDAPI_KEY=${RAPIDAPI_KEY}
+        
+  reverse-proxy:
+    build:
+      context: .
+      dockerfile: ./nginx/Dockerfile
+    image: reverseproxy
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+
+  backend-arm32:
+      platform: linux/arm/v7  
+      build:
+        context: .
+        dockerfile: ./Dockerfile
+      image: emailbreach-arm32
+      environment:
+        - RAPIDAPI_KEY=${RAPIDAPI_KEY}
+        
+  reverse-proxy-arm32:
+    platform: linux/arm/v7                 
+    build:
+      context: .
+      dockerfile: ./nginx/Dockerfile
+    image: reverseproxy-arm32
+    ports:
+      - "80:80"
+    depends_on:
+      - backend-arm32

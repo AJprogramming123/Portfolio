@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-black text-white font-mono h-screen">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Booting...</title>
+  <script defer src="{{ url_for('static', filename='js/intro.js') }}"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+
+<body class="flex items-center justify-center min-h-screen m-0">
+
+  <div id="terminal" class="bg-black border border-white rounded p-4 whitespace-pre text-xl max-w-lg">
+    <span id="boot-text"></span>
+    <div id="prompt" class="hidden mt-4 text-white">[Press Enter to Access]</div>
+  </div>
+
+</body>
+
+</html>
