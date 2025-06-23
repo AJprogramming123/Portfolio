@@ -7,7 +7,7 @@ const lines = [
   "> Deploying Flask instance...",
   "> Connecting to ajprogramming123.xyz...",
   "",
-  "Welcome to the portfolio."
+  "Welcome to my portfolio."
 ];
 
 let lineIndex = 0;
@@ -34,9 +34,11 @@ function typeLine() {
   } else {
     prompt.classList.remove("hidden");
     document.addEventListener("keydown", (e) => {
+
       if (e.key === "Enter") {
         window.location.href = "/home";
       }
+    
     });
   }
 }

@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html lang="en" class="bg-black text-white font-mono h-screen">
-
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' https://cdn.jsdelivr.net;" />
+
+
   <title>Booting...</title>
   <script defer src="{{ url_for('static', filename='js/intro.js') }}"></script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
 </head>
 
-<body class="flex items-center justify-center min-h-screen m-0">
 
-  <div id="terminal" class="bg-black border border-white rounded p-4 whitespace-pre text-xl max-w-lg">
-    <span id="boot-text"></span>
-    <div id="prompt" class="hidden mt-4 text-white">[Press Enter to Access]</div>
+
+
+
+<body class="flex flex-col justify-between min-h-screen m-0">
+
+  <!-- Terminal -->
+  <div class="flex-grow flex items-center justify-center">
+
+    <div id="terminal" class="bg-black border border-white rounded p-4 whitespace-pre text-xl max-w-lg">
+      
+      <span id="boot-text"></span>
+      <div id="prompt" class="hidden mt-4 text-white">[Press Enter to Access]</div>
+        
+    </div>
   </div>
+
+  <!-- Mobile Only Banner -->
+  <a href="/home" class="block text-white text-center py-3 px-4 hover:bg-green-600 transition-colors duration-200 cursor-pointer">
+  📱 Tap here to continue
+  </a>
+
+
 
 </body>
 
