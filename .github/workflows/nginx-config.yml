@@ -27,5 +27,5 @@ jobs:
 
       - name: Push new nginx (reverse proxy) tag
         run: |
-          docker tag reverseproxy ghcr.io/ajprogramming123/emailbreach-reverseproxy:latest
-          docker push ghcr.io/ajprogramming123/emailbreach-reverseproxy:latest
+          docker tag reverseproxy ghcr.io/ajprogramming123/portfolio-reverseproxy:latest
+          docker push ghcr.io/ajprogramming123/portfolio-reverseproxy:latest
