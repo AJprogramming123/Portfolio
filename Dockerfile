@@ -11,8 +11,6 @@ COPY run.py ./run.py
 # Copy frontend files so Flask can serve them
 COPY frontend/templates ./frontend/templates
 COPY frontend/static ./frontend/static
-COPY frontend/js
- 
 
 ENV PYTHONPATH=/app/backend
 RUN pip install -e .
