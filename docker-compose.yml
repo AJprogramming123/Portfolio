@@ -4,8 +4,6 @@ services:
       context: .
       dockerfile: ./Dockerfile
     image: emailbreach
-    environment:
-      - RAPIDAPI_KEY=${RAPIDAPI_KEY}
         
   reverse-proxy:
     build:
@@ -23,8 +21,6 @@ services:
         context: .
         dockerfile: ./Dockerfile
       image: emailbreach-arm32
-      environment:
-        - RAPIDAPI_KEY=${RAPIDAPI_KEY}
         
   reverse-proxy-arm32:
     platform: linux/arm/v7                 
