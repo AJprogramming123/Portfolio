@@ -5,14 +5,13 @@ WORKDIR /app
 RUN pip install --upgrade pip setuptools wheel
 
 COPY pyproject.toml ./pyproject.toml
-COPY src ./src
+COPY backend ./backend
 COPY run.py ./run.py
 
 # Copy frontend files so Flask can serve them
 COPY frontend/templates ./frontend/templates
 COPY frontend/static ./frontend/static
 
-ENV PYTHONPATH=/app/backend
 RUN pip install -e .
 
 EXPOSE 5000
