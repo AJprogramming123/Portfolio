@@ -22,7 +22,7 @@ jobs:
           password: ${{ secrets.GHCR_TOKEN }}
 
       - name: Build ARM32 reverse proxy with Compose
-        run: docker compose build reverse-proxy-arm32
+        run: docker compose build backend-arm32 reverse-proxy-arm32
 
       - name: Tag reverse proxy image for GHCR
         run: docker tag reverseproxy-arm32 ghcr.io/ajprogramming123/portfolio-reverseproxy-arm32:latest
