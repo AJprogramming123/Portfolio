@@ -12,7 +12,7 @@ const lines = [
 
 let lineIndex = 0;
 let charIndex = 0;
-const speed = 30; 
+const speed = 20; 
 const bootText = document.getElementById("boot-text");
 const prompt = document.getElementById("prompt");
 

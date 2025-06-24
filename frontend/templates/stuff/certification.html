@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-black text-white font-mono min-h-screen">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' https://cdn.jsdelivr.net;" />
+
+  <title>Certifications</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+
+<body class="flex flex-col items-center justify-start min-h-screen p-8 space-y-12">
+
+  <!-- Back button -->
+  <a href="/home" class="self-start flex items-center space-x-2 text-green-400 hover:text-green-300 transition-colors">
+    <span>← Back to Home</span>
+  </a>
+
+  <main class="max-w-4xl w-full">
+    <h1 class="text-4xl font-bold mb-8 text-center">Certifications</h1>
+
+    <div class="grid gap-10">
+      <!-- Cert 1 -->
+      <div class="border border-gray-700 rounded-lg p-6 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 shadow-md hover:shadow-green-400/20 transition-shadow">
+        <img src="{{ url_for('static', filename='img/gfact.png') }}" alt="GFACT Certification" class="w-40 h-auto rounded-md border border-white" />
+        <div class="text-center md:text-left">
+          <h2 class="text-2xl font-semibold text-green-400 mb-2">GIAC Foundational Cybersecurity Technologies (GFACT) Certification</h2>
+          <p class="text-base text-gray-300">
+            Completed after 4 months of intensive self-study to master foundational cybersecurity concepts. Covered operating system fundamentals (Windows & Linux), networking, scripting, encryption, access control, and incident response. Gained hands-on experience with real-world tools and techniques for system hardening, threat analysis, and secure configurations. This certification validates readiness for entry-level cybersecurity and SOC analyst roles.
+          </p>
+        </div>
+      </div>
+
+      <!-- Cert 2 -->
+      <div class="border border-gray-700 rounded-lg p-6 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 shadow-md hover:shadow-green-400/20 transition-shadow">
+        <img src="{{ url_for('static', filename='img/cyb102.png') }}" alt="CYB 102 Certification" class="w-40 h-auto rounded-md border border-white" />
+        <div class="text-center md:text-left">
+          <h2 class="text-2xl font-semibold text-green-400 mb-2">Codepath Intermediate Cybersecurity (CYB 102) Certification</h2>
+          <p class="text-base text-gray-300">
+            Completed a comprehensive bootcamp featuring weekly practical exercises focused on cybersecurity fundamentals, threat identification, and defense strategies. Developed skills in vulnerability assessment, penetration testing basics, and incident response through hands-on labs and real-world scenarios.
+          </p>
+        </div>
+      </div>
+
+      <!-- Cert 3 -->
+      <div class="border border-gray-700 rounded-lg p-6 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 shadow-md hover:shadow-green-400/20 transition-shadow">
+        <img src="{{ url_for('static', filename='img/inprogress.png') }}" alt="FIU Cybersecurity Certification" class="w-40 h-auto rounded-md border border-white" />
+        <div class="text-center md:text-left">
+          <h2 class="text-2xl font-semibold text-green-400 mb-2">(In Progress) Undergraduate Certification in Cybersecurity Intelligence & Information Policy - Jack D. Gordon Institute for Public Policy</h2>
+          <p class="text-base text-gray-300">
+            Pursuing a multi-course certification offered by FIU focusing on cybersecurity policy, intelligence analysis, and regulatory frameworks. The program integrates technical and policy perspectives to prepare for roles in cybersecurity governance and public policy.
+          </p>
+        </div>
+      </div>
+
+      <!-- Cert 4 -->
+      <div class="border border-gray-700 rounded-lg p-6 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 shadow-md hover:shadow-green-400/20 transition-shadow">
+        <img src="{{ url_for('static', filename='img/docker.png') }}" alt="Docker Foundations Certification" class="w-40 h-auto rounded-md border border-white" />
+        <div class="text-center md:text-left">
+          <h2 class="text-2xl font-semibold text-green-400 mb-2">Docker Foundations Professional Certificate - Docker Training</h2>
+          <p class="text-base text-gray-300">
+            Gained fundamental knowledge of containerization concepts, Docker CLI, image creation, container orchestration basics, and best practices for deploying applications using Docker.
+          </p>
+        </div>
+      </div>
+
+      <!-- Cert 5 -->
+      <div class="border border-gray-700 rounded-lg p-6 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 shadow-md hover:shadow-green-400/20 transition-shadow">
+        <img src="{{ url_for('static', filename='img/inprogress.png') }}" alt="Postman API Fundamentals" class="w-40 h-auto rounded-md border border-white" />
+        <div class="text-center md:text-left">
+          <h2 class="text-2xl font-semibold text-green-400 mb-2">(In Progress) Postman API Fundamentals Student Expert Certification</h2>
+          <p class="text-base text-gray-300">
+            Developing skills in API testing and automation using Postman. Covers RESTful architecture, authentication methods, environment variables, scripting, and creating comprehensive API test collections.
+          </p>
+        </div>
+      </div>
+
+      <!-- Cert 6 -->
+      <div class="border border-gray-700 rounded-lg p-6 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 shadow-md hover:shadow-green-400/20 transition-shadow">
+        <img src="{{ url_for('static', filename='img/inprogress.png') }}" alt="Cisco CCNA Certification" class="w-40 h-auto rounded-md border border-white" />
+        <div class="text-center md:text-left">
+          <h2 class="text-2xl font-semibold text-green-400 mb-2">(In Progress) Cisco Certified Network Associate (CCNA) Routing and Switching</h2>
+          <p class="text-base text-gray-300">
+            Studying core networking concepts including IP addressing, routing protocols, network security fundamentals, and hands-on Cisco device configuration to prepare for professional network administration roles.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+</body>
+</html>

@@ -21,3 +21,11 @@ def project():
 @start_bp.route('/socials')
 def social():
     return render_template('stuff/social.html')
+
+@start_bp.route('/certs')
+def cert():
+    return render_template('stuff/certification.html')
+
+@start_bp.route('/pi')
+def pi():
+    return render_template('stuff/pi.html')
