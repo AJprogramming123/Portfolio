@@ -14,6 +14,6 @@ COPY frontend/static ./frontend/static
 
 RUN pip install -e .
 
-EXPOSE 5000
+EXPOSE 6000
 
 CMD ["python", "run.py"]
