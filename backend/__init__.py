@@ -1,6 +1,7 @@
 import os
 from flask import Flask
 from .start import start_bp
+from API.chatbot import chatbot_bp
 
 def create_app():
     base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../frontend'))
@@ -14,4 +15,5 @@ def create_app():
     )
 
     app.register_blueprint(start_bp)
+    app.register_blueprint(chatbot_bp, url_prefix="/chatbot")
     return app

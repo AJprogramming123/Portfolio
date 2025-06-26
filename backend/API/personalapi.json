@@ -1,0 +1,109 @@
+{
+  "AboutMe": {
+    "name": "Andres Jaimes",
+    "title": "Information Technology major",
+    "goals": "Im a Senior IT major in FIU at the moment the final goal is to be able to become an expert in DevOps, system administration, and backend infrastructure. My mission is to deeply understand how technology works across all layers—from software to servers—and to help others prepare for the future of tech through clear, hands-on teaching."
+  },
+  "Education": [
+    {
+      "degree": "B.S. in Information Technology",
+      "school": "Florida International University (FIU)",
+      "location": "Miami, FL",
+      "date": "December 2025",
+      "notes": [
+        "Inducted into International Business Honor Society (IBHS)",
+        "Undergraduate Certificate in Cybersecurity Intelligence & Information Policy"
+      ]
+    },
+    {
+      "degree": "A.A. in Information Systems",
+      "school": "Miami Dade College (MDC)",
+      "location": "Miami, FL",
+      "date": "December 2023",
+      "notes": ["Graduated with Honors"]
+    }
+  ],
+  "Experience": [
+    {
+      "title": "IT Support Center Student Assistant",
+      "company": "Florida International University",
+      "location": "Miami, FL",
+      "dates": "June 2024 - Present",
+      "responsibilities": [
+        "Provide technical support for software, hardware, and network issues.",
+        "Manage support requests via ServiceNow.",
+        "Configure new workstations and assist in training new IT staff.",
+        "Handle 15+ daily support calls, coordinating with departments and field techs."
+      ]
+    }
+  ],
+  "Projects": [
+    {
+      "name": "Portfolio Website",
+      "description": "Personal site built with Flask and Docker, deployed on a Raspberry Pi. Secured using Fail2Ban, Tailscale VPN, and Cloudflare Tunnel. Includes architecture documentation."
+    },
+    {
+      "name": "Email Breach Finder Web App",
+      "description": "Modular Flask backend + static frontend, containerized with Docker and managed via Docker Compose. Includes GitHub Actions CI/CD and secure deployment on a Raspberry Pi with Nginx reverse proxy."
+    },
+    {
+      "name": "Cloud Threat Detection with Splunk",
+      "description": "Used Splunk to investigate AWS reconnaissance behavior and identify malicious IP activity, cross-referenced with VirusTotal."
+    },
+    {
+      "name": "VPN File Server on Raspberry Pi",
+      "description": "Created secure Samba-based file sharing server with advanced hardening: Tailscale VPN, fail2ban, SSH key auth, firewall configuration, and privilege isolation."
+    }
+  ],
+  "InProgress": [
+    "Developing Docker + Cloudflare tutorials for LinkedIn and YouTube.",
+    "Training teammates on GitHub branching and Docker workflows for Capstone project.",
+    "Expanding OpenAI chatbot to summarize technical experience and certifications."
+  ],
+  "Certifications": [
+    {
+      "name": "Postman API Fundamentals Student Expert",
+      "issuer": "Postman",
+      "issued_on": "2025-06-25"
+    },
+    {
+      "name": "Intermediate Cybersecurity (CYB 102)",
+      "issuer": "CodePath",
+      "issued_on": "2025-05"
+    },
+    {
+      "name": "Docker Foundations Professional Certificate",
+      "issuer": "Docker Training",
+      "issued_on": "2025-06"
+    },
+    {
+      "name": "GIAC Foundational Cybersecurity Technologies (GFACT)",
+      "issuer": "SANS Institute",
+      "issued_on": "2024-11"
+    }
+  ],
+  "Skills": {
+    "Technical": [
+      "Python",
+      "Bash",
+      "Git",
+      "Flask",
+      "Nginx",
+      "Docker",
+      "GitHub Actions",
+      "CI/CD",
+      "ServiceNow",
+      "Unittesting"
+    ],
+    "Security & Infrastructure": [
+      "Linux",
+      "Networking",
+      "Cybersecurity",
+      "VPNs",
+      "Tailscale",
+      "Cloudflare",
+      "Splunk",
+      "Fail2Ban"
+    ]
+  }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-black text-white font-mono h-screen">
+<html lang="en" class="bg-black text-white font-mono min-h-screen">
 
 <head>
   <meta charset="UTF-8" />
@@ -11,58 +11,86 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
 </head>
 
+<body class="flex flex-col items-center min-h-screen m-0 p-12 space-y-24">
 
-
-
-
-<body class="flex flex-col items-center justify-center min-h-screen m-0 p-8 space-y-12">
-
-  <header class="text-center max-w-3xl">
-    <h1 class="text-4xl font-bold mb-4">Hey! I’m Andres Jaimes</h1>
-    <p class="text-lg max-w-xl mx-auto">
+  <header class="text-center max-w-3xl min-h-[250px]">
+    <h1 class="text-5xl font-bold mb-8">Hey! I’m Andres Jaimes</h1>
+    <p class="text-xl max-w-xl mx-auto leading-relaxed">
       An IT major at FIU passionate about system administration and DevOps.  
       To prove it, this entire website runs through my personal Raspberry Pi that I configured myself!
     </p>
   </header>
 
-  <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl w-full">
-
-    <a href="/about" class="bg-gray-800 hover:bg-gray-700 rounded-lg p-6 text-center transition">
-      <h2 class="text-2xl font-semibold mb-2">About</h2>
-      <p>Learn more about me and my background.</p>
-    </a>
-
-    <a href="/projects" class="bg-gray-800 hover:bg-gray-700 rounded-lg p-6 text-center transition">
-      <h2 class="text-2xl font-semibold mb-2">Projects</h2>
-      <p>Explore my personal projects.</p>
-    </a>
-
-    <a href="/certs" class="bg-gray-800 hover:bg-gray-700 rounded-lg p-6 text-center transition">
-      <h2 class="text-2xl font-semibold mb-2">Certifications</h2>
-      <p>Check out my professional certifications.</p>
-    </a>
-
-    <a href="/socials" class="bg-gray-800 hover:bg-gray-700 rounded-lg p-6 text-center transition">
-      <h2 class="text-2xl font-semibold mb-2">Socials</h2>
-      <p>Connect with me online.</p>
-    </a>
-
-    <a href="/pi" class="bg-gray-800 hover:bg-gray-700 rounded-lg p-6 text-center transition">
-      <h2 class="text-2xl font-semibold mb-2">Raspberry Pi</h2>
-      <p>My notes on how I set up the Raspberry Pi</p>
-    </a>
-
+  <section class="max-w-3xl text-center text-gray-400 text-base leading-relaxed px-6 min-h-[200px]">
+    <p>
+      This portfolio focuses on highlighting my skills in DevOps and System Administration, which are the areas I’m most passionate about.  
+      For the frontend, I used some existing templates and examples as a starting point to keep the design clean and straightforward.  
+      This allowed me to dedicate more time and energy to building the backend systems and infrastructure, which is where I really enjoy working.  
+      Of course, with everything I put out, I always go back and study what I’ve done to deepen my understanding for future projects.
+    </p>
   </section>
+  
+ <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 max-w-5xl w-full px-4">
 
-  <section class="max-w-3xl text-center text-gray-400 text-sm leading-relaxed px-4">
-  <p>
-    This portfolio focuses on highlighting my skills in DevOps and System Administration, which are the areas I’m most passionate about.  
-    For the frontend, I used some existing templates and examples as a starting point to keep the design clean and straightforward.  
-    This allowed me to dedicate more time and energy to building the backend systems and infrastructure, which is where I really enjoy working.  
-    Of course, with everything I put out, I always go back and study what I’ve done to deepen my understanding for future projects.
-  </p>
+  <a href="/about" class="bg-gray-800 hover:bg-gray-700 rounded-lg p-10 text-center transition">
+    <h2 class="text-3xl font-semibold mb-4">About</h2>
+    <p class="text-lg">Learn more about me and my background.</p>
+  </a>
+
+  <a href="/projects" class="bg-gray-800 hover:bg-gray-700 rounded-lg p-10 text-center transition">
+    <h2 class="text-3xl font-semibold mb-4">Projects</h2>
+    <p class="text-lg">Explore my personal projects.</p>
+  </a>
+
+  <a href="/socials" class="bg-gray-800 hover:bg-gray-700 rounded-lg p-10 text-center transition">
+    <h2 class="text-3xl font-semibold mb-4">Socials</h2>
+    <p class="text-lg">Connect with me online.</p>
+  </a>
+
 </section>
 
+<!-- Manual flex row for the two wider cards -->
+<div class="flex flex-col md:flex-row justify-center items-center gap-8 mt-8 px-4">
+  
+  <a href="/certs" class="bg-gray-800 hover:bg-gray-700 rounded-lg p-10 text-center transition w-full max-w-2xl">
+    <h2 class="text-3xl font-semibold mb-4">Certifications</h2>
+    <p class="text-lg">Check out my professional certifications.</p>
+  </a>
+
+  <a href="/pi" class="bg-gray-800 hover:bg-gray-700 rounded-lg p-10 text-center transition w-full max-w-2xl">
+    <h2 class="text-3xl font-semibold mb-4">Raspberry Pi</h2>
+    <p class="text-lg">My notes on how I set up the Raspberry Pi</p>
+  </a>
+
+</div>
+
+  <!-- Chatbot container -->
+  <div id="chatbot" class="w-200 max-w-[400px] max-h-[400px] bg-gray-900 rounded-lg shadow-lg flex flex-col text-white font-mono text-sm z-50 mx-auto">
+
+    <div class="bg-gray-800 p-3 font-semibold text-center text-lg">Ask Andres 🤖</div>
+    
+    <div class="p-3 text-gray-400 text-xs italic bg-gray-900 text-center">
+      Try asking about: "About me", "Certifications", "Skills", or "Projects".
+    </div>
+    
+    <div id="chatbot-messages" class="p-4 flex-grow overflow-y-auto space-y-3 bg-gray-900"></div>
+    
+    <form id="chatbot-form" class="p-3 bg-gray-800 flex space-x-3">
+      <input
+        id="chatbot-input"
+        type="text"
+        placeholder="Ask about Andres..."
+        class="flex-grow bg-gray-700 rounded px-3 py-2 text-white placeholder-gray-400 focus:outline-none"
+        autocomplete="off"
+        required
+      />
+      <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 px-4 rounded text-white font-semibold">Send</button>
+    </form>
+
+  </div>
+
+<!-- Load chatbot JS -->
+<script defer src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
 </body>
 
 </html>
