@@ -43,13 +43,13 @@
       console.log('Response JSON:', data);
 
       if (!data.response) {
-        appendMessage('bot', 'Error: No response from server.');
+        appendMessage('bot', 'Error: No response from server. You've been blocked for a while');
       } else {
         appendMessage('bot', data.response);
       }
     } catch (err) {
       console.error('Fetch error:', err);
-      appendMessage('bot', 'Error: Unable to get response.');
+      appendMessage('bot', 'Error: Unable to get response. You've been blocked for a while');
     } finally {
       input.disabled = false;
       input.focus();
